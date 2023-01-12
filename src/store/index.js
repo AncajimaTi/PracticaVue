@@ -47,7 +47,7 @@ export default createStore({
         router.push('/');
         return ;
       }
-      state.tarea= state.tareas.find(item=>item.id == payload);
+      state.tarea= state.tareas.find(item=>item.id == payload);aaa
     },
     update(state,payload){
       state.tareas= state.tareas.map(item=> item.id == payload.id ? payload : item);
